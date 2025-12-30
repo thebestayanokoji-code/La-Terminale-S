@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Terminale S — TS</title>
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    header { background:#0b79d0; color:#fff; padding:12px 16px; display:flex; align-items:center; gap:16px; }
+    header h1 { margin:0; font-size:1.1rem; }
+    nav { background:#f4f4f4; padding:8px 16px; display:flex; gap:8px; flex-wrap:wrap; }
+    nav a { color:#0b79d0; text-decoration:none; padding:6px 10px; background:#fff; border-radius:6px; border:1px solid #e0e0e0; }
+    .container { display:flex; height:calc(100vh - 96px); }
+    .sidebar { width:320px; max-width:40%; overflow:auto; border-right:1px solid #e8e8e8; padding:12px; background:#fafafa; }
+    .content { flex:1; height:100%; }
+    iframe { width:100%; height:100%; border:0; }
+    ul { list-style:none; padding:0; margin:0; }
+    li { margin:6px 0; }
+    .home-link { font-weight:700; }
+    footer { padding:8px 12px; font-size:0.9rem; color:#666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Terminale S — Accueil</h1>
+    <div>Page d'accueil: <a href="AMIS/TS.html" style="color:#fff; text-decoration:underline; margin-left:8px;">TS</a></div>
+  </header>
+  <nav>
+    <a href="#" onclick="load('AMIS/TS.html');return false;">Ouvrir TS</a>
+    <a href="#" onclick="loadList();return false;">Liste des pages</a>
+    <a href="#" onclick="openInNew('AMIS/TS.html');return false;">Ouvrir TS dans un nouvel onglet</a>
+  </nav>
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <p style="margin-top:0"><strong>Pages AMIS</strong></p>
+      <ul id="links">
+        <li><a class="home-link" href="#" onclick="load('AMIS/TS.html');return false;">TS (page d'accueil)</a></li>
+        <li><a href="#" onclick="load('AMIS/LEMEILLEUR.html');return false;">LEMEILLEUR</a></li>
+        <li><a href="#" onclick="load('AMIS/Alleluia.html');return false;">Alleluia</a></li>
+        <li><a href="#" onclick="load('AMIS/Anais.html');return false;">Anais</a></li>
+        <li><a href="#" onclick="load('AMIS/Anicet.html');return false;">Anicet</a></li>
+        <li><a href="#" onclick="load('AMIS/Arielle.html');return false;">Arielle</a></li>
+        <li><a href="#" onclick="load('AMIS/Aristode.html');return false;">Aristode</a></li>
+        <li><a href="#" onclick="load('AMIS/Arthur.html');return false;">Arthur</a></li>
+        <li><a href="#" onclick="load('AMIS/Bakita.html');return false;">Bakita</a></li>
+        <li><a href="#" onclick="load('AMIS/Bonheur.html');return false;">Bonheur</a></li>
+        <li><a href="#" onclick="load('AMIS/Caleb.html');return false;">Caleb</a></li>
+        <li><a href="#" onclick="load('AMIS/Camille.html');return false;">Camille</a></li>
+        <li><a href="#" onclick="load('AMIS/Casimir.html');return false;">Casimir</a></li>
+        <li><a href="#" onclick="load('AMIS/Emmanuel.html');return false;">Emmanuel</a></li>
+        <li><a href="#" onclick="load('AMIS/Ephraim.html');return false;">Ephraim</a></li>
+        <li><a href="#" onclick="load('AMIS/Eric.html');return false;">Eric</a></li>
+        <li><a href="#" onclick="load('AMIS/Germaine.html');return false;">Germaine</a></li>
+        <li><a href="#" onclick="load('AMIS/Habib.html');return false;">Habib</a></li>
+        <li><a href="#" onclick="load('AMIS/Hermann.html');return false;">Hermann</a></li>
+        <li><a href="#" onclick="load('AMIS/Horner.html');return false;">Horner</a></li>
+        <li><a href="#" onclick="load('AMIS/Josué.html');return false;">Josué</a></li>
+        <li><a href="#" onclick="load('AMIS/Junior.html');return false;">Junior</a></li>
+        <li><a href="#" onclick="load('AMIS/Magloire.html');return false;">Magloire</a></li>
+        <li><a href="#" onclick="load('AMIS/Marie.html');return false;">Marie</a></li>
+        <li><a href="#" onclick="load('AMIS/Mariette.html');return false;">Mariette</a></li>
+        <li><a href="#" onclick="load('AMIS/Myriam.html');return false;">Myriam</a></li>
+        <li><a href="#" onclick="load('AMIS/Osee.html');return false;">Osee</a></li>
+        <li><a href="#" onclick="load('AMIS/Princesse.html');return false;">Princesse</a></li>
+        <li><a href="#" onclick="load('AMIS/Reine.html');return false;">Reine</a></li>
+        <li><a href="#" onclick="load('AMIS/Rodolphe.html');return false;">Rodolphe</a></li>
+        <li><a href="#" onclick="load('AMIS/Ronald.html');return false;">Ronald</a></li>
+        <li><a href="#" onclick="load('AMIS/Salem.html');return false;">Salem</a></li>
+        <li><a href="#" onclick="load('AMIS/Serena.html');return false;">Serena</a></li>
+        <li><a href="#" onclick="load('AMIS/Severin.html');return false;">Severin</a></li>
+        <li><a href="#" onclick="load('AMIS/Steeve.html');return false;">Steeve</a></li>
+        <li><a href="#" onclick="load('AMIS/Succes.html');return false;">Succes</a></li>
+        <li><a href="#" onclick="load('AMIS/Toussaint.html');return false;">Toussaint</a></li>
+        <li><a href="#" onclick="load('AMIS/Valeur.html');return false;">Valeur</a></li>
+      </ul>
+      <footer>Si un nom manque, dis‑le et je l'ajouterai.</footer>
+    </aside>
+    <main class="content">
+      <iframe id="frame" src="AMIS/TS.html" title="TS"></iframe>
+    </main>
+  </div>
+
+  <script>
+    function load(path){
+      document.getElementById('frame').src = path;
+    }
+    function openInNew(path){
+      window.open(path, '_blank');
+    }
+    function loadList(){
+      document.getElementById('frame').src = 'about:blank';
+      // focus the sidebar
+      document.getElementById('sidebar').scrollTop = 0;
+    }
+  </script>
+</body>
+</html>
