@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEMEILLEUR</title>
+    <link rel="stylesheet" href="../Style.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        color: #667eea;
+        text-align: center;
+      }
+      h2 {
+        color: #764ba2;
+        text-align: center;
+        margin-top: 30px;
+      }
+      p {
+        color: #333;
+        line-height: 1.8;
+        font-size: 1.1em;
+      }
+      .section-title {
+        color: #667eea;
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      .button-group {
+        display: flex;
+        gap: 15px;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .action-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bold;
+      }
+      .action-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+      }
+      .action-button.whatsapp {
+        background: linear-gradient(135deg, #25D366 0%, #20BA58 100%);
+      }
+      .action-button.whatsapp:hover {
+        box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+      }
+      .back-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      .back-button:hover {
+        background: #764ba2;
+      }
+      .info-box {
+        background: #f0f4ff;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>⭐ LEMEILLEUR ⭐</h1>
+      <p>
+        Bienvenue sur la page interactive ! 
+        <br /><br />
+        Tu as deux options pour participer :
+      </p>
+
+      <div class="section-title">1️⃣ Proposer un Prix ou une Récompense</div>
+      <div class="info-box">
+        <p>
+          Si tu penses qu'une personne mérite un prix ou une récompense spéciale pour ses qualités ou ses actions cette année, tu peux le partager directement via WhatsApp !
+        </p>
+      </div>
+      <div class="button-group">
+        <a href="https://wa.me/?text=Proposition%20de%20prix%20:%20Je%20pense%20que%20[nom]%20mérite%20un%20prix%20pour%20[raison]" class="action-button whatsapp" target="_blank">
+          💬 Proposer un Prix sur WhatsApp
+        </a>
+      </div>
+
+      <div class="section-title">2️⃣ Partager tes Pensées sur Moi</div>
+      <div class="info-box">
+        <p>
+          Tu as la liberté de dire exactement ce que tu penses de moi - bon ou mauvais, louanges ou critiques constructives. Ton avis m'intéresse vraiment, sans filter !
+        </p>
+      </div>
+      <div class="button-group">
+        <a href="https://wa.me/?text=Voici%20ce%20que%20je%20pense%20vraiment%20de%20toi%20:%20" class="action-button whatsapp" target="_blank">
+          💭 Partager tes Pensées sur WhatsApp
+        </a>
+      </div>
+
+      <div class="info-box" style="background: #fff3cd; border-left-color: #ffc107; margin-top: 40px;">
+        <p>
+          <strong>Note :</strong> Ces liens WhatsApp te permettront d'envoyer des messages directement. N'hésite pas à être honnête et authentique - c'est ce qui compte vraiment ! 📱
+        </p>
+      </div>
+
+      <center>
+        <a href="../TS.html" class="back-button">← Retour à la liste</a>
+      </center>
+    </div>
+  </body>
+</html>
